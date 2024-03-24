@@ -40,15 +40,11 @@ class RegistrationFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.haveAccount.setOnClickListener {
-            findNavController().navigate(R.id.action_registration_to_login)
+            findNavController().popBackStack()
         }
 
         binding.dob.setOnClickListener {
             showDatePickerDialog()
-        }
-
-        binding.smartRegistrationLay.setOnClickListener {
-            gotoNumberWithDelay()
         }
 
         binding.registrationBtn.setOnClickListener {

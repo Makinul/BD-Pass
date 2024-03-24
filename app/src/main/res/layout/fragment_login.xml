@@ -37,7 +37,7 @@
             app:layout_constraintTop_toBottomOf="@id/splash_icon" />
 
         <TextView
-            android:id="@+id/do_not_have_account"
+            android:id="@+id/do_not_have_an_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/do_not_have_an_account"
@@ -49,74 +49,107 @@
             app:layout_constraintTop_toBottomOf="@id/welcome" />
 
         <TextView
-            android:id="@+id/phone_number_label"
+            android:id="@+id/nid_number_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/phone_number"
+            android:text="@string/nid_number"
             android:textColor="@color/white"
             android:textSize="@dimen/app_body_text_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/input_guideline" />
 
         <EditText
-            android:id="@+id/phone_number_edt"
+            android:id="@+id/nid_number_edt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/default_margin"
             android:background="@drawable/edit_text_back"
-            android:hint="@string/enter_your_phone_number"
+            android:hint="@string/enter_your_nid_number"
             android:imeOptions="actionNext"
             android:inputType="phone"
             android:padding="@dimen/default_margin_small"
             android:singleLine="true"
-            app:layout_constraintTop_toBottomOf="@id/phone_number_label" />
+            app:layout_constraintTop_toBottomOf="@id/nid_number_label" />
 
         <TextView
-            android:id="@+id/password_label"
+            android:id="@+id/dob_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/default_margin"
-            android:text="@string/password"
+            android:text="@string/date_of_birth"
             android:textColor="@color/white"
             android:textSize="@dimen/app_body_text_size"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/phone_number_edt" />
+            app:layout_constraintTop_toBottomOf="@id/nid_number_edt" />
 
-        <EditText
-            android:id="@+id/password_edt"
+        <TextView
+            android:id="@+id/dob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:background="@drawable/edit_text_back"
-            android:hint="@string/enter_your_password"
-            android:imeOptions="actionDone"
-            android:inputType="textPassword"
+            android:hint="@string/date_of_birth_format"
             android:padding="@dimen/default_margin_small"
             android:singleLine="true"
-            app:layout_constraintTop_toBottomOf="@id/password_label" />
-
-        <CheckBox
-            android:id="@+id/remember_me"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:buttonTint="@color/white"
-            android:gravity="center"
-            android:text="@string/remember_me"
-            android:textColor="@color/white"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/password_edt" />
+            app:layout_constraintTop_toBottomOf="@id/dob_label" />
 
         <TextView
-            android:id="@+id/forgot_password"
+            android:id="@+id/or"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/forgot_password"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/or"
             android:textColor="@color/white"
             android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@id/remember_me"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/remember_me" />
+            app:layout_constraintEnd_toEndOf="@id/dob"
+            app:layout_constraintStart_toStartOf="@id/dob"
+            app:layout_constraintTop_toBottomOf="@id/dob" />
+
+        <LinearLayout
+            android:id="@+id/smart_registration_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@drawable/edit_text_back"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_margin_small"
+            app:layout_constraintTop_toBottomOf="@id/or">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="@dimen/default_margin_very_small"
+                android:text="@string/finger_print"
+                android:textSize="@dimen/app_body_title_text_size"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_finger_print"
+                app:layout_constraintEnd_toEndOf="@id/dob"
+                app:layout_constraintStart_toStartOf="@id/dob"
+                app:layout_constraintTop_toBottomOf="@id/dob" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/or"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/dob"
+                app:layout_constraintStart_toStartOf="@id/dob"
+                app:layout_constraintTop_toBottomOf="@id/dob" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="@dimen/default_margin_very_small"
+                android:text="@string/face_id"
+                android:textSize="@dimen/app_body_title_text_size"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_face_id"
+                app:layout_constraintEnd_toEndOf="@id/dob"
+                app:layout_constraintStart_toStartOf="@id/dob"
+                app:layout_constraintTop_toBottomOf="@id/dob" />
+        </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/login_btn"

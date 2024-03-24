@@ -187,7 +187,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/nid_website"
+            android:id="@+id/nid_website_lay"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -203,6 +203,7 @@
                 android:src="@drawable/ic_bd_govt_logo" />
 
             <TextView
+                android:id="@+id/nid_website"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_margin_small"
@@ -211,7 +212,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/passport_website"
+            android:id="@+id/passport_website_lay"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -227,6 +228,7 @@
                 android:src="@drawable/ic_bd_passport_logo" />
 
             <TextView
+                android:id="@+id/passport_website"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_margin_small"
@@ -235,7 +237,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/driving_license_website"
+            android:id="@+id/driving_license_website_lay"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -251,6 +253,7 @@
                 android:src="@drawable/ic_bd_driving_license_logo" />
 
             <TextView
+                android:id="@+id/driving_license_website"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_margin_small"
@@ -259,7 +262,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/police_website"
+            android:id="@+id/police_website_lay"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -275,6 +278,7 @@
                 android:src="@drawable/ic_bd_police_logo" />
 
             <TextView
+                android:id="@+id/police_website"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_margin_small"

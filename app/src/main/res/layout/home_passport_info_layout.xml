@@ -21,13 +21,14 @@
         android:id="@+id/subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin_small"
         android:gravity="end"
         android:text="@string/passport_number_with_title"
         android:textColor="@color/black"
-        android:layout_marginBottom="@dimen/default_margin_small"
         android:textSize="@dimen/app_body_title_text_size"
         app:layout_constraintBottom_toTopOf="@id/profile_pic"
-        app:layout_constraintEnd_toEndOf="@id/profile_pic" />
+        app:layout_constraintEnd_toEndOf="@id/profile_pic"
+        app:layout_constraintTop_toBottomOf="@id/bd_govt" />
 
     <TextView
         android:id="@+id/sure_name"
@@ -38,8 +39,7 @@
         android:textColor="@color/black"
         android:textSize="@dimen/app_body_text_size"
         app:layout_constraintBottom_toTopOf="@id/given_name"
-        app:layout_constraintStart_toStartOf="@id/given_name"
-        app:layout_constraintTop_toBottomOf="@id/bd_govt" />
+        app:layout_constraintStart_toStartOf="@id/given_name" />
 
     <TextView
         android:id="@+id/given_name"

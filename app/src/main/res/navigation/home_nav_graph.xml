@@ -14,7 +14,17 @@
         <action
             android:id="@+id/action_home_to_nid_details"
             app:destination="@id/nid_details_fragment" />
+
+        <action
+            android:id="@+id/action_home_to_web_browser"
+            app:destination="@id/web_fragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/web_fragment"
+        android:name="com.makinul.bd.pass.ui.home.web.WebFragment"
+        android:label="@string/title_web_browser"
+        tools:layout="@layout/fragment_web" />
 
     <fragment
         android:id="@+id/nid_details_fragment"

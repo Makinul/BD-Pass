@@ -12,6 +12,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 import com.makinul.bd.pass.R
 import com.makinul.bd.pass.databinding.FragmentHomeBinding
+import com.makinul.bd.pass.utils.AppConstants
 
 class HomeFragment : Fragment() {
 
@@ -66,20 +67,39 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_home_to_nid_details)
         }
 
-        binding.nidWebsite.setOnClickListener {
-
+        binding.nidWebsiteLay.setOnClickListener {
+            gotoBrowserFragment(
+                title = binding.nidWebsite.text.toString(),
+                browserUrl = AppConstants.NID_URL
+            )
         }
-        binding.drivingLicenseWebsite.setOnClickListener {
-
+        binding.drivingLicenseWebsiteLay.setOnClickListener {
+            gotoBrowserFragment(
+                title = binding.drivingLicenseWebsite.text.toString(),
+                browserUrl = AppConstants.DRIVING_LICENSE_URL
+            )
         }
-        binding.passportWebsite.setOnClickListener {
-
+        binding.passportWebsiteLay.setOnClickListener {
+            gotoBrowserFragment(
+                title = binding.passportWebsite.text.toString(),
+                browserUrl = AppConstants.PASSPORT_URL
+            )
         }
-        binding.policeWebsite.setOnClickListener {
-
+        binding.policeWebsiteLay.setOnClickListener {
+            gotoBrowserFragment(
+                title = binding.policeWebsite.text.toString(),
+                browserUrl = AppConstants.POLICE_URL
+            )
         }
 
         return root
+    }
+
+    private fun gotoBrowserFragment(title: String, browserUrl: String) {
+        val args = Bundle()
+        args.putString(AppConstants.KEY_BROWSER_TITLE, title)
+        args.putString(AppConstants.KEY_BROWSER_URL, browserUrl)
+        findNavController().navigate(R.id.action_home_to_web_browser, args)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

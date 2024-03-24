@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/registration_fragment">
+    app:startDestination="@id/login_fragment">
 
     <fragment
         android:id="@+id/login_fragment"
@@ -12,8 +12,8 @@
         tools:layout="@layout/fragment_login">
 
         <action
-            android:id="@+id/action_login_to_number"
-            app:destination="@id/number_fragment" />
+            android:id="@+id/action_login_to_otp"
+            app:destination="@id/otp_fragment" />
 
         <action
             android:id="@+id/action_login_to_registration"
