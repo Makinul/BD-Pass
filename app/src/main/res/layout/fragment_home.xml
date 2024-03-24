@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_margin"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/national_id_card" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/passport" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/driving_license" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nid_card_tile_bg"
+        android:backgroundTint="@color/nid_card_tile_bg"
+        android:padding="@dimen/default_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_item_bg_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <include
+            android:id="@+id/nid_lay"
+            layout="@layout/home_nid_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/passport_lay"
+            layout="@layout/home_passport_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/driving_license_lay"
+            layout="@layout/home_driving_license_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_small"
+        android:text="@string/my_information"
+        android:textSize="@dimen/app_body_title_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_small"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/home_tile_size"
+                android:layout_height="@dimen/home_tile_size"
+                android:background="@drawable/home_tile_icon_bg"
+                android:backgroundTint="@color/home_tile_icon_documents_bg"
+                android:padding="@dimen/default_margin"
+                android:src="@drawable/ic_home_tile_documents" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/documents"
+                android:textSize="@dimen/app_body_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/home_tile_size"
+                android:layout_height="@dimen/home_tile_size"
+                android:background="@drawable/home_tile_icon_bg"
+                android:backgroundTint="@color/home_tile_icon_personal_bg"
+                android:padding="@dimen/default_margin"
+                android:src="@drawable/ic_home_tile_personal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/personal"
+                android:textSize="@dimen/app_body_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/home_tile_size"
+                android:layout_height="@dimen/home_tile_size"
+                android:background="@drawable/home_tile_icon_bg"
+                android:backgroundTint="@color/home_tile_icon_finance_bg"
+                android:padding="@dimen/default_margin"
+                android:src="@drawable/ic_home_tile_finance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/finance"
+                android:textSize="@dimen/app_body_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/home_tile_size"
+                android:layout_height="@dimen/home_tile_size"
+                android:background="@drawable/home_tile_icon_bg"
+                android:backgroundTint="@color/home_tile_icon_mobile_sim_bg"
+                android:padding="@dimen/default_margin"
+                android:src="@drawable/ic_home_tile_mobile_sim" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/mobile_sim"
+                android:textSize="@dimen/app_body_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_small"
+        android:text="@string/useful_website"
+        android:textSize="@dimen/app_body_title_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_small"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/nid_website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/home_tile_size"
+                android:layout_height="@dimen/home_tile_size"
+                android:background="@drawable/home_tile_icon_bg"
+                android:backgroundTint="@color/white"
+                android:padding="@dimen/default_margin"
+                android:src="@drawable/ic_bd_govt_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/national_id"
+                android:textSize="@dimen/app_body_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passport_website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/home_tile_size"
+                android:layout_height="@dimen/home_tile_size"
+                android:background="@drawable/home_tile_icon_bg"
+                android:backgroundTint="@color/white"
+                android:padding="@dimen/default_margin"
+                android:src="@drawable/ic_bd_passport_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/passport"
+                android:textSize="@dimen/app_body_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/driving_license_website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/home_tile_size"
+                android:layout_height="@dimen/home_tile_size"
+                android:background="@drawable/home_tile_icon_bg"
+                android:backgroundTint="@color/white"
+                android:padding="@dimen/default_margin"
+                android:src="@drawable/ic_bd_driving_license_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/driving_license"
+                android:textSize="@dimen/app_body_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/police_website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/home_tile_size"
+                android:layout_height="@dimen/home_tile_size"
+                android:background="@drawable/home_tile_icon_bg"
+                android:backgroundTint="@color/white"
+                android:padding="@dimen/default_margin"
+                android:src="@drawable/ic_bd_police_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/police"
+                android:textSize="@dimen/app_body_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

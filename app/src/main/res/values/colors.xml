@@ -2,4 +2,22 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="nid_card_tile_bg">#E2FCF5</color>
+    <color name="passport_card_tile_bg">#27256856</color>
+    <color name="driving_license_card_tile_bg">#28F44336</color>
+
+    <color name="home_tile_icon_documents_bg">#E1F5EA</color>
+    <color name="home_tile_icon_personal_bg">#FEEAD4</color>
+    <color name="home_tile_icon_finance_bg">#F9F5FF</color>
+    <color name="home_tile_icon_mobile_sim_bg">#E0F5FD</color>
+
+    <color name="bottom_nav_icon_color_normal">#200E32</color>
+    <color name="bottom_nav_icon_color_checked">#F42B41</color>
+
+    <color name="continue_button_bg">#F42B41</color>
+    <color name="verification_color">#006A4E</color>
+    <color name="step_progress_selected">#006A4E</color>
+
+    <color name="components_color">#006A4E</color>
 </resources>
