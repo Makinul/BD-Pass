@@ -195,7 +195,7 @@
             android:background="@drawable/edit_text_back"
             android:hint="@string/name"
             android:padding="@dimen/default_margin_very_small"
-            android:text="করিমমিয়া"
+            android:text="মোঃ মাসুব আলম"
             android:textSize="@dimen/nid_edittext_size" />
 
         <TextView
@@ -213,7 +213,7 @@
             android:background="@drawable/edit_text_back"
             android:hint="@string/name"
             android:padding="@dimen/default_margin_very_small"
-            android:text="মুহাম্মদজাফরখান"
+            android:text="মোঃ আবু বকর ছিদ্দিক"
             android:textSize="@dimen/nid_edittext_size" />
 
         <TextView
@@ -231,7 +231,7 @@
             android:background="@drawable/edit_text_back"
             android:hint="@string/name"
             android:padding="@dimen/default_margin_very_small"
-            android:text="আমিনাবেগম"
+            android:text="সাফিয়া খাতুন"
             android:textSize="@dimen/nid_edittext_size" />
 
         <TextView
@@ -249,7 +249,7 @@
             android:background="@drawable/edit_text_back"
             android:hint="@string/name"
             android:padding="@dimen/default_margin_very_small"
-            android:text="02 Nov 1982"
+            android:text="07th Jan 1986"
             android:textSize="@dimen/nid_edittext_size" />
     </LinearLayout>
 
@@ -259,7 +259,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_margin"
         android:src="@drawable/nid_pic"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/nid_scan_title" />
 
     <androidx.appcompat.widget.AppCompatButton
