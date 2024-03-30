@@ -18,6 +18,22 @@
         <action
             android:id="@+id/action_home_to_web_browser"
             app:destination="@id/web_fragment" />
+
+        <action
+            android:id="@+id/action_home_to_documents"
+            app:destination="@id/documents_fragment" />
+
+        <action
+            android:id="@+id/action_home_to_personal"
+            app:destination="@id/personal_fragment" />
+
+        <action
+            android:id="@+id/action_home_to_sim"
+            app:destination="@id/sim_fragment" />
+
+        <action
+            android:id="@+id/action_home_to_finance"
+            app:destination="@id/finance_fragment" />
     </fragment>
 
     <fragment
@@ -49,4 +65,28 @@
         android:name="com.makinul.bd.pass.ui.home.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/documents_fragment"
+        android:name="com.makinul.bd.pass.ui.home.documents.DocumentsFragment"
+        android:label="@string/title_documents"
+        tools:layout="@layout/fragment_documents" />
+
+    <fragment
+        android:id="@+id/personal_fragment"
+        android:name="com.makinul.bd.pass.ui.home.personal.PersonalFragment"
+        android:label="@string/title_personal"
+        tools:layout="@layout/fragment_personal" />
+
+    <fragment
+        android:id="@+id/sim_fragment"
+        android:name="com.makinul.bd.pass.ui.home.sim.SimFragment"
+        android:label="@string/title_sim"
+        tools:layout="@layout/fragment_sim" />
+
+    <fragment
+        android:id="@+id/finance_fragment"
+        android:name="com.makinul.bd.pass.ui.home.finance.FinanceFragment"
+        android:label="@string/title_finance"
+        tools:layout="@layout/fragment_finance" />
 </navigation>

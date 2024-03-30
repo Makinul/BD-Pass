@@ -66,6 +66,10 @@
     <string name="title_profile">Profile</string>
     <string name="title_nid_details">NID Information</string>
     <string name="title_web_browser">Web Browser</string>
+    <string name="title_documents">Documents</string>
+    <string name="title_personal">Personal</string>
+    <string name="title_sim">Mobile SIM</string>
+    <string name="title_finance">Finance</string>
 
     <string name="work_in_progress">Work in progress…</string>
     <string name="loading">Loading…</string>
@@ -121,6 +125,8 @@
     <string name="finger_print">Finger print</string>
     <string name="face_id">Face ID</string>
 
+    <string name="please_enter_nid_number">Please enter NID number to verify</string>
+    <string name="please_enter_phone_number_and_dob">Please enter phone number and Date of Birth to verify</string>
     <string name="please_enter_nid_number_and_dob">Please enter NID number and Date of Birth to verify</string>
 
     <string name="number_choose_message" formatted="false">We found 3 Mobile on your NID Number. Please Select the phone number you want to register.</string>
@@ -134,5 +140,15 @@
     <string name="registration">Registration</string>
     <string name="take_a_picture">Take a Picture</string>
     <string name="nid_information">NID Information</string>
+    <string name="family_details">Family Details</string>
+    <string name="sim_info_description">You have the mobile number below registered under your NID number.</string>
+    <string name="number_banglalink">01989575643</string>
+    <string name="number_grameen">01777865453</string>
+    <string name="number_bkash">01777865453</string>
+    <string name="sim_info_banglalink">Banglalink - 21st March 2021</string>
+    <string name="sim_info_grameen">Grameenphone - 04st November 2016</string>
+    <string name="finance_info_description_account">You have bellow Bank Accounts</string>
+    <string name="finance_info_description_wallet">You have bellow Mobile Wallet</string>
+
 
 </resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_margin">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/details_info_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nid_details_screen_bg"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin">
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name_with_title"
+                android:textSize="@dimen/app_body_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/date_of_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/dob_with_title"
+                android:textSize="@dimen/app_body_text_size"
+                app:layout_constraintStart_toStartOf="@id/full_name"
+                app:layout_constraintTop_toBottomOf="@id/full_name" />
+
+            <TextView
+                android:id="@+id/father_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/father_name_with_title_bangla"
+                android:textSize="@dimen/app_body_text_size"
+                app:layout_constraintStart_toStartOf="@id/date_of_birth"
+                app:layout_constraintTop_toBottomOf="@id/date_of_birth" />
+
+            <TextView
+                android:id="@+id/mother_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/mother_name_with_title_bangla"
+                android:textSize="@dimen/app_body_text_size"
+                app:layout_constraintStart_toStartOf="@id/father_name"
+                app:layout_constraintTop_toBottomOf="@id/father_name" />
+
+            <TextView
+                android:id="@+id/blood_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/blood_group_with_title"
+                android:textSize="@dimen/app_body_text_size"
+                app:layout_constraintStart_toStartOf="@id/mother_name"
+                app:layout_constraintTop_toBottomOf="@id/mother_name" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/address_with_title"
+                android:textSize="@dimen/app_body_text_size"
+                app:layout_constraintStart_toStartOf="@id/blood_group"
+                app:layout_constraintTop_toBottomOf="@id/blood_group" />
+
+            <TextView
+                android:id="@+id/issue_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_small"
+                android:text="@string/doi_with_title"
+                android:textSize="@dimen/app_body_text_size"
+                app:layout_constraintStart_toStartOf="@id/address"
+                app:layout_constraintTop_toBottomOf="@id/address" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/family_details_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@drawable/nid_details_screen_bg"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin"
+            app:layout_constraintTop_toBottomOf="@id/details_info_lay">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/family_details"
+                android:textColor="@color/components_color"
+                android:textSize="@dimen/app_title_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down_small"
+                android:tint="@color/components_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

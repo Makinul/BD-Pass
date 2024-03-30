@@ -71,50 +71,50 @@
             android:singleLine="true"
             app:layout_constraintTop_toBottomOf="@id/nid_number_label" />
 
-        <TextView
-            android:id="@+id/dob_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/default_margin"
-            android:text="@string/date_of_birth"
-            android:textColor="@color/white"
-            android:textSize="@dimen/app_body_text_size"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/nid_number_edt" />
+<!--        <TextView-->
+<!--            android:id="@+id/dob_label"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/default_margin"-->
+<!--            android:text="@string/date_of_birth"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/app_body_text_size"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/nid_number_edt" />-->
 
-        <TextView
-            android:id="@+id/dob"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/edit_text_back"
-            android:hint="@string/date_of_birth_format"
-            android:padding="@dimen/default_margin_small"
-            android:singleLine="true"
-            app:layout_constraintTop_toBottomOf="@id/dob_label" />
+<!--        <TextView-->
+<!--            android:id="@+id/dob"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@drawable/edit_text_back"-->
+<!--            android:hint="@string/date_of_birth_format"-->
+<!--            android:padding="@dimen/default_margin_small"-->
+<!--            android:singleLine="true"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/dob_label" />-->
 
-        <CheckBox
-            android:id="@+id/remember_me"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:buttonTint="@color/white"
-            android:gravity="center"
-            android:text="@string/remember_me"
-            android:textColor="@color/white"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/dob" />
+<!--        <CheckBox-->
+<!--            android:id="@+id/remember_me"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:buttonTint="@color/white"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/remember_me"-->
+<!--            android:textColor="@color/white"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/dob" />-->
 
-        <TextView
-            android:id="@+id/forgot_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/forgot_password"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@id/remember_me"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/remember_me" />
+<!--        <TextView-->
+<!--            android:id="@+id/forgot_password"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/forgot_password"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="14sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/remember_me"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/remember_me" />-->
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/registration_btn"

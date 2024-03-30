@@ -13,6 +13,7 @@ import com.makinul.bd.pass.R
 import com.makinul.bd.pass.base.BaseFragment
 import com.makinul.bd.pass.databinding.FragmentOtpBinding
 import com.makinul.bd.pass.ui.home.HomeActivity
+import com.makinul.bd.pass.utils.AppConstants
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -21,6 +22,15 @@ import kotlinx.coroutines.launch
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class OtpFragment : BaseFragment() {
+
+    private var isItFromRegistration: Boolean = true
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        arguments?.let {
+            isItFromRegistration = it.getBoolean(AppConstants.KEY_IS_IT_FROM_REGISTRATION, true)
+        }
+    }
 
     private var _binding: FragmentOtpBinding? = null
 
@@ -80,8 +90,19 @@ class OtpFragment : BaseFragment() {
         binding.progressBar.visibility = View.VISIBLE
         lifecycleScope.launch(Dispatchers.Main) {
             delay(2000)
-            findNavController().navigate(R.id.action_otp_to_verification)
+
+            if (isItFromRegistration) {
+                findNavController().navigate(R.id.action_otp_to_verification)
+            } else {
+                gotoHome()
+            }
         }
+    }
+
+    private fun gotoHome() {
+        val intent = Intent(context, HomeActivity::class.java)
+        startActivity(intent)
+        activity?.finish()
     }
 
     override fun onDestroyView() {

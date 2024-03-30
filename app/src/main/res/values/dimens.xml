@@ -9,7 +9,9 @@
     <dimen name="app_body_title_text_size">14sp</dimen>
     <dimen name="app_body_text_size">12sp</dimen>
     <dimen name="app_body_text_size_small">10sp</dimen>
+    <dimen name="app_body_text_size_very_small">8sp</dimen>
 
+    <dimen name="default_margin_double">32dp</dimen>
     <dimen name="default_margin">16dp</dimen>
     <dimen name="default_margin_small">12dp</dimen>
     <dimen name="default_margin_very_small">10dp</dimen>

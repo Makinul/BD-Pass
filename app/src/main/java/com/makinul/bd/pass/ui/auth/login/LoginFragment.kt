@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.makinul.bd.pass.R
 import com.makinul.bd.pass.base.BaseFragment
 import com.makinul.bd.pass.databinding.FragmentLoginBinding
+import com.makinul.bd.pass.utils.AppConstants
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -58,10 +59,10 @@ class LoginFragment : BaseFragment() {
             if (binding.progressBar.visibility == View.VISIBLE)
                 return@setOnClickListener
 
-            val nidNumber = binding.nidNumberEdt.text.toString()
+            val number = binding.phoneNumberEdt.text.toString()
             val dob = binding.dob.text.toString()
-            if (nidNumber.isEmpty() || dob.isEmpty()) {
-                showToast(getString(R.string.please_enter_nid_number_and_dob))
+            if (number.isEmpty() || dob.isEmpty()) {
+                showToast(getString(R.string.please_enter_phone_number_and_dob))
                 return@setOnClickListener
             }
             gotoOtpWithDelay()
@@ -96,7 +97,10 @@ class LoginFragment : BaseFragment() {
         binding.progressBar.visibility = View.VISIBLE
         lifecycleScope.launch(Dispatchers.Main) {
             delay(2000)
-            findNavController().navigate(R.id.action_login_to_otp)
+
+            val args = Bundle()
+            args.putBoolean(AppConstants.KEY_IS_IT_FROM_REGISTRATION, false)
+            findNavController().navigate(R.id.action_login_to_otp, args)
         }
     }
 

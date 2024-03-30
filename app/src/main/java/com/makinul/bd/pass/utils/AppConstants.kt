@@ -8,4 +8,7 @@ object AppConstants {
     const val PASSPORT_URL = "https://www.epassport.gov.bd/"
     const val DRIVING_LICENSE_URL = "https://bsp.brta.gov.bd/"
     const val POLICE_URL = "https://www.police.gov.bd/"
+
+
+    const val KEY_IS_IT_FROM_REGISTRATION = "isItFromRegistration"
 }

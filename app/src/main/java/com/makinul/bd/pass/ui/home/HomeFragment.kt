@@ -91,6 +91,18 @@ class HomeFragment : Fragment() {
                 browserUrl = AppConstants.POLICE_URL
             )
         }
+        binding.documentsLay.setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_documents)
+        }
+        binding.personalLay.setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_personal)
+        }
+        binding.simLay.setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_sim)
+        }
+        binding.financeLay.setOnClickListener {
+            findNavController().navigate(R.id.action_home_to_finance)
+        }
 
         return root
     }
