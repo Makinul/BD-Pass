@@ -149,6 +149,7 @@
     <string name="sim_info_grameen">Grameenphone - 04st November 2016</string>
     <string name="finance_info_description_account">You have bellow Bank Accounts</string>
     <string name="finance_info_description_wallet">You have bellow Mobile Wallet</string>
+    <string name="logout">Logout</string>
 
 
 </resources>

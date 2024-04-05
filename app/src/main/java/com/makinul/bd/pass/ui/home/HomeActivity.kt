@@ -1,6 +1,9 @@
 package com.makinul.bd.pass.ui.home
 
+import android.R.menu
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -11,6 +14,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.makinul.bd.pass.R
 import com.makinul.bd.pass.databinding.ActivityHomeBinding
+import com.makinul.bd.pass.ui.auth.AuthActivity
 
 
 class HomeActivity : AppCompatActivity() {
@@ -52,12 +56,25 @@ class HomeActivity : AppCompatActivity() {
         setTitle()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.home_option_menu, menu)
+        return true
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // handle arrow click here
         if (item.itemId == android.R.id.home) {
             super.onBackPressed()
+        } else if (item.itemId == R.id.action_logout) {
+            gotoAuthActivity()
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun gotoAuthActivity() {
+        val intent = Intent(this, AuthActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     fun setTitle(title: String = "") {
