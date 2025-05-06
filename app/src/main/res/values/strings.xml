@@ -1,7 +1,55 @@
 <resources>
-    <string name="app_name">Bd Pass</string>
+    <string name="app_name">BD Pass</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="login_fragment">Login Fragment</string>
+    <string name="registration_fragment">Registration Fragment</string>
+    <string name="verification_fragment">Verification Fragment</string>
+    <string name="number_fragment">Number Fragment</string>
+    <string name="otp_fragment">Otp Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+
     <string name="welcome">Welcome</string>
-    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="do_not_have_an_account"><u>Don\'t have an account? Sign Up</u></string>
+    <string name="have_an_account"><u>Have an account? Sign In</u></string>
     <string name="sign_up">Sign Up</string>
     <string name="phone_number">Phone Number</string>
     <string name="enter_your_phone_number">Enter your phone number</string>
@@ -10,4 +58,98 @@
     <string name="remember_me">Remember me</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="login">Login</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_nid_details">NID Information</string>
+    <string name="title_web_browser">Web Browser</string>
+    <string name="title_documents">Documents</string>
+    <string name="title_personal">Personal</string>
+    <string name="title_sim">Mobile SIM</string>
+    <string name="title_finance">Finance</string>
+
+    <string name="work_in_progress">Work in progress…</string>
+    <string name="loading">Loading…</string>
+
+    <string name="national_id_card">National Id Card</string>
+    <string name="national_id">National Id</string>
+    <string name="passport">Passport</string>
+    <string name="driving_license">Driving License</string>
+    <string name="police">Police</string>
+    <string name="bd_govt">Government of the people’s republic of Bangladesh</string>
+    <string name="my_information">My Information</string>
+    <string name="useful_website">Useful Website</string>
+
+    <string name="documents">Documents</string>
+    <string name="personal">Personal</string>
+    <string name="finance">Finance</string>
+    <string name="mobile_sim">Mobile Sim</string>
+
+    <string name="dummy_full_name">Md. Masud Alam</string>
+    <string name="welcome_user_" formatted="false">Welcome, %s</string>
+
+    <string name="see_full_details_underline"><u>See Full Details</u></string>
+    <string name="website_underline"><u>Website</u></string>
+    <string name="please_enter_phone_number_and_password">Please enter phone number and password</string>
+    <string name="please_enter_correct_phone_number_and_password">Please enter correct phone number and password</string>
+    <string name="please_enter_correct_otp_number">Please enter correct OTP number</string>
+
+    <string name="surname_with_title">SurName\n<b>MD. MASUD</b></string>
+    <string name="give_name_with_title">Given Name\n<b>ALAM</b></string>
+    <string name="full_name_with_title">Name\n<b>MD. MASUD ALAM</b></string>
+    <string name="full_name_with_title_bangla">Name\n<b>মোঃ মাসুব আলম</b></string>
+    <string name="dob_with_title">Date of Birth\n<b>07th Jan 1986</b></string>
+    <string name="doi_with_title">Date of Issue\n<b>12th Jan 2016</b></string>
+    <string name="doe_with_title">Date of Expiry\n<b>11th Jan 2026</b></string>
+    <string name="father_name_with_title_bangla">Father\n<b>মোঃ আবু বকর ছিদ্দিক </b></string>
+    <string name="mother_name_with_title_bangla">Mother\n<b>মোঃ মাসুব আলম</b></string>
+    <string name="blood_group_with_title">Blood Group\n<b>O+</b></string>
+    <string name="address_with_title">Address\n<b>ছিদ্দক  মিয়ার বাড়ি, গ্রাম/রাস্তাঃ বাতাশিড়ি, সমাসপুর, ডাকঘর: সমাসপুর, ৩৮৬০, দাগনভুক , ফেনী।</b></string>
+
+    <string name="driving_license_with_title">Licence Number\n<b>DK934039053454</b></string>
+    <string name="passport_number_with_title">Passport Number\n<b>A 019272302</b></string>
+    <string name="otp_verification_message" formatted="false">We sent OTP verification to your\nphone this code will expired in\n%s</string>
+    <string name="otp_verification_timeout" formatted="false">OTP verification timeout,\nplease try again.</string>
+    <string name="continue_text">Continue</string>
+
+    <string name="nid_number">NID Number</string>
+    <string name="national_id_card_with_value">National ID Card: 239 397 2050</string>
+    <string name="dummy_nid_number">239 397 2050</string>
+    <string name="enter_your_nid_number">Enter your NID Number</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="date_of_birth_format">DD/MM/YYYY</string>
+    <string name="or">OR</string>
+    <string name="finger_print">Finger print</string>
+    <string name="face_id">Face ID</string>
+
+    <string name="please_enter_nid_number">Please enter NID number to verify</string>
+    <string name="please_enter_phone_number_and_dob">Please enter phone number and Date of Birth to verify</string>
+    <string name="please_enter_nid_number_and_dob">Please enter NID number and Date of Birth to verify</string>
+
+    <string name="number_choose_message" formatted="false">We found 3 Mobile on your NID Number. Please Select the phone number you want to register.</string>
+    <string name="number1">01779867408</string>
+    <string name="number2">01893934421</string>
+    <string name="number3">01397028328</string>
+    <string name="verify_your_information">Verify your Information</string>
+    <string name="name">Name</string>
+    <string name="fathers_name">Father\'s Name</string>
+    <string name="mothers_name">Mother\'s Name</string>
+    <string name="registration">Registration</string>
+    <string name="take_a_picture">Take a Picture</string>
+    <string name="nid_information">NID Information</string>
+    <string name="family_details">Family Details</string>
+    <string name="sim_info_description">You have the mobile number below registered under your NID number.</string>
+    <string name="number_banglalink">01989575643</string>
+    <string name="number_grameen">01777865453</string>
+    <string name="number_bkash">01777865453</string>
+    <string name="sim_info_banglalink">Banglalink - 21st March 2021</string>
+    <string name="sim_info_grameen">Grameenphone - 04st November 2016</string>
+    <string name="finance_info_description_account">You have bellow Bank Accounts</string>
+    <string name="finance_info_description_wallet">You have bellow Mobile Wallet</string>
+    <string name="logout">Logout</string>
+
+
 </resources>

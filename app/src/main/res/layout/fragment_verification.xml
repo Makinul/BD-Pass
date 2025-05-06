@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/default_margin">
+
+    <TextView
+        android:id="@+id/verify_your_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_your_information"
+        android:textColor="@color/verification_color"
+        android:textSize="@dimen/app_title_text_size"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/steps_progress_lay"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/default_margin_very_small"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/verify_your_information">-->
+
+    <!--        <View-->
+    <!--            android:layout_width="@dimen/steps_progress_icon_size"-->
+    <!--            android:layout_height="@dimen/steps_progress_icon_size"-->
+    <!--            android:background="@drawable/steps_progress_selected" />-->
+
+    <!--        <View-->
+    <!--            android:layout_width="@dimen/steps_progress_icon_size"-->
+    <!--            android:layout_height="@dimen/steps_progress_icon_size"-->
+    <!--            android:background="@drawable/steps_progress_normal" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/steps_title_lay"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/default_margin_very_small"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/steps_progress_lay">-->
+
+    <!--    </LinearLayout>-->
+
+    <View
+        android:id="@+id/nid_scan_progress"
+        android:layout_width="@dimen/steps_progress_icon_size"
+        android:layout_height="@dimen/steps_progress_icon_size"
+        android:layout_marginTop="@dimen/default_margin"
+        android:background="@drawable/steps_progress_selected"
+        app:layout_constraintEnd_toEndOf="@id/nid_scan_title"
+        app:layout_constraintStart_toStartOf="@id/nid_scan_title"
+        app:layout_constraintTop_toBottomOf="@id/verify_your_information" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nid_scan_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_very_small"
+        android:text="NID Scan"
+        android:textColor="@color/verification_color"
+        android:textSize="@dimen/app_body_title_text_size"
+        app:layout_constraintEnd_toStartOf="@id/confirm_info_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nid_scan_progress" />
+
+    <View
+        android:id="@+id/confirm_info_progress"
+        android:layout_width="@dimen/steps_progress_icon_size"
+        android:layout_height="@dimen/steps_progress_icon_size"
+        android:layout_marginTop="@dimen/default_margin"
+        android:background="@drawable/steps_progress_normal"
+        app:layout_constraintBottom_toBottomOf="@id/nid_scan_progress"
+        app:layout_constraintEnd_toEndOf="@id/confirm_info_title"
+        app:layout_constraintStart_toStartOf="@id/confirm_info_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/confirm_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_very_small"
+        android:text="Confirm Info"
+        android:textColor="@color/verification_color"
+        android:textSize="@dimen/app_body_title_text_size"
+        app:layout_constraintEnd_toStartOf="@id/picture_title"
+        app:layout_constraintStart_toEndOf="@id/nid_scan_title"
+        app:layout_constraintTop_toBottomOf="@id/nid_scan_progress" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/steps_progress_stroke"
+        android:background="@color/step_progress_selected"
+        app:layout_constraintBottom_toBottomOf="@id/nid_scan_progress"
+        app:layout_constraintEnd_toStartOf="@id/confirm_info_progress"
+        app:layout_constraintStart_toEndOf="@id/nid_scan_progress"
+        app:layout_constraintTop_toTopOf="@id/nid_scan_progress" />
+
+    <View
+        android:id="@+id/picture_progress"
+        android:layout_width="@dimen/steps_progress_icon_size"
+        android:layout_height="@dimen/steps_progress_icon_size"
+        android:layout_marginTop="@dimen/default_margin"
+        android:background="@drawable/steps_progress_normal"
+        app:layout_constraintBottom_toBottomOf="@id/nid_scan_progress"
+        app:layout_constraintEnd_toEndOf="@id/picture_title"
+        app:layout_constraintStart_toStartOf="@id/picture_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/picture_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_very_small"
+        android:text="Picture"
+        android:textColor="@color/verification_color"
+        android:textSize="@dimen/app_body_title_text_size"
+        app:layout_constraintEnd_toStartOf="@id/finish_title"
+        app:layout_constraintStart_toEndOf="@id/confirm_info_title"
+        app:layout_constraintTop_toBottomOf="@id/nid_scan_progress" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/steps_progress_stroke"
+        android:background="@color/step_progress_selected"
+        app:layout_constraintBottom_toBottomOf="@id/confirm_info_progress"
+        app:layout_constraintEnd_toStartOf="@id/picture_progress"
+        app:layout_constraintStart_toEndOf="@id/confirm_info_progress"
+        app:layout_constraintTop_toTopOf="@id/confirm_info_progress" />
+
+    <View
+        android:id="@+id/finish_progress"
+        android:layout_width="@dimen/steps_progress_icon_size"
+        android:layout_height="@dimen/steps_progress_icon_size"
+        android:layout_marginTop="@dimen/default_margin"
+        android:background="@drawable/steps_progress_normal"
+        app:layout_constraintBottom_toBottomOf="@id/nid_scan_progress"
+        app:layout_constraintEnd_toEndOf="@id/finish_title"
+        app:layout_constraintStart_toStartOf="@id/finish_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/finish_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_very_small"
+        android:text="Finish"
+        android:textColor="@color/verification_color"
+        android:textSize="@dimen/app_body_title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/picture_title"
+        app:layout_constraintTop_toBottomOf="@id/nid_scan_progress" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/steps_progress_stroke"
+        android:background="@color/step_progress_selected"
+        app:layout_constraintBottom_toBottomOf="@id/picture_progress"
+        app:layout_constraintEnd_toStartOf="@id/finish_progress"
+        app:layout_constraintStart_toEndOf="@id/picture_progress"
+        app:layout_constraintTop_toTopOf="@id/picture_progress" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/nid_copy_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:src="@drawable/nid_copy_pic"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/nid_scan_title" />
+
+    <LinearLayout
+        android:id="@+id/nid_info_lay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:gravity="start|top"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/continue_btn"
+        app:layout_constraintTop_toBottomOf="@id/nid_scan_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_very_small"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/app_body_text_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_very_small"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/name"
+            android:padding="@dimen/default_margin_very_small"
+            android:text="মোঃ মাসুব আলম"
+            android:textSize="@dimen/nid_edittext_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_very_small"
+            android:text="@string/fathers_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/app_body_text_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_very_small"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/name"
+            android:padding="@dimen/default_margin_very_small"
+            android:text="মোঃ আবু বকর ছিদ্দিক"
+            android:textSize="@dimen/nid_edittext_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_very_small"
+            android:text="@string/mothers_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/app_body_text_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_very_small"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/name"
+            android:padding="@dimen/default_margin_very_small"
+            android:text="সাফিয়া খাতুন"
+            android:textSize="@dimen/nid_edittext_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_very_small"
+            android:text="@string/date_of_birth"
+            android:textColor="@color/black"
+            android:textSize="@dimen/app_body_text_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_very_small"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/name"
+            android:padding="@dimen/default_margin_very_small"
+            android:text="07th Jan 1986"
+            android:textSize="@dimen/nid_edittext_size" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/nid_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:src="@drawable/nid_pic"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/nid_scan_title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin_small"
+        android:background="@drawable/edit_text_back"
+        android:padding="@dimen/default_margin"
+        android:text="@string/continue_text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="#ff0000"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

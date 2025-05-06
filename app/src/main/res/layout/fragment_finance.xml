@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/finance_info_description_account"
+            android:textSize="@dimen/app_title_text_size_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/default_margin_very_small"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="Eastern Bank PLC."
+            android:textSize="@dimen/app_body_title_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="Janata Bank PLC."
+            android:textSize="@dimen/app_body_title_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/default_margin_double"
+            android:layout_height="wrap_content"
+            android:text="@string/finance_info_description_wallet"
+            android:textSize="@dimen/app_title_text_size_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/default_margin_very_small"
+            android:background="@color/grey" />
+
+        <include
+            android:id="@+id/bkash"
+            layout="@layout/item_mobile_wallet"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

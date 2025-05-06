@@ -8,7 +8,7 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.youthfireit.asiamegamart" />
+                  <option name="appId" value="com.ovalpay" />
                 </ConnectionSetting>
               </option>
               <option name="failureTypes">
@@ -27,10 +27,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.makinul.bd.pass" />
+                  <option name="mobileSdkAppId" value="1:1054685428969:android:499f85424728cd23ea8478" />
+                  <option name="projectId" value="bd-pass" />
+                  <option name="projectNumber" value="1054685428969" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bd_govt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/default_margin_small"
+        android:gravity="center"
+        android:text="মোটর ড্রাইভিং লাইসেন্স"
+        android:textSize="@dimen/app_body_text_size"
+        app:drawableStartCompat="@drawable/ic_bd_driving_license_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin_small"
+        android:gravity="end"
+        android:text="@string/driving_license_with_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_body_title_text_size"
+        app:layout_constraintBottom_toTopOf="@id/profile_pic"
+        app:layout_constraintEnd_toEndOf="@id/profile_pic"
+        app:layout_constraintTop_toBottomOf="@id/bd_govt" />
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin_small"
+        android:text="@string/full_name_with_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_body_text_size"
+        app:layout_constraintBottom_toTopOf="@id/date_of_birth"
+        app:layout_constraintStart_toStartOf="@id/date_of_birth" />
+
+    <TextView
+        android:id="@+id/date_of_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin_small"
+        android:text="@string/dob_with_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_body_text_size"
+        app:layout_constraintBottom_toTopOf="@id/issue_date"
+        app:layout_constraintStart_toStartOf="@id/issue_date" />
+
+    <TextView
+        android:id="@+id/issue_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin_small"
+        android:text="@string/doi_with_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_body_text_size"
+        app:layout_constraintBottom_toTopOf="@id/expire_date"
+        app:layout_constraintStart_toStartOf="@id/expire_date" />
+
+    <TextView
+        android:id="@+id/expire_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doe_with_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_body_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/full_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_full_details_underline"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_body_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin_small"
+        android:src="@drawable/driving_license_user_pic"
+        app:layout_constraintBottom_toTopOf="@id/full_details"
+        app:layout_constraintEnd_toEndOf="@id/full_details" />
+</androidx.constraintlayout.widget.ConstraintLayout>
