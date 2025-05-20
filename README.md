@@ -4,6 +4,9 @@
 
 BD Pass is a digital signature app designed to securely store your self-information and link it with your National ID (NID) and mobile number. It streamlines verification processes and provides easy access to your important documents.
 
+* **App-Banner**
+    ![App-Banner](/screenshots/app_banner.png)
+
 ## Features
 
 * **NID Verification:** Links all your information to your NID for secure and reliable verification.
@@ -30,9 +33,9 @@ BD Pass is a digital signature app designed to securely store your self-informat
 Here are some screenshots of the BD Pass app:
 
 * **Login/Registration:**
-    ![Login/Registration](Screenshot 2025-05-06 at 8.15.23 PM.png)
+    ![Login/Registration](/screenshots/login.png)
 * **User Profile & Information:**
-    ![User Profile & Information](Screenshot 2025-05-06 at 8.15.32 PM.png)
+    ![User Profile & Information](/screenshots/screenshotall.png)
 
 ## How to Use
 
